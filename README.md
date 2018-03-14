@@ -29,9 +29,13 @@ A `Service` is an instance that that serves an HTTP request and sends back an HT
 To build your own `Service`, you must extend one of the 4 classes listed above and implement its `onServe` method(s). Because a `Service` only serves one request, the member variables you declare in a `Service` instance is only valid during serving that request.
 
 In order to build a server that can serve many requests from many clients, a `ServiceFactory` is needed to generate `Service`s for each incoming request. Just implement `createService()` to build a `ServiceFactory`. To simplify this, you can do it with lambda
-  () -> new ImplementedService(params)
+```java
+() -> new ImplementedService(params)
+```
 or method inference
-  ImplementedService::new
+```java
+ImplementedService::new
+```
 .
 
 There are 2 `Service` interfaces to simplify your job. Implement `SingletonService` if your `Service` doesn't have any member variables and one instance can be used for all requests in all connections. It is actually a `ServiceFactory` that returns itself in `createService()`. If your `Service` doesn't hold any system resources that can leak and therefore `init()` and `release()` are empty, you can implement `NoResourcesService` to save some code.
@@ -42,16 +46,16 @@ Some partially or fully implemented `Service`s are there in the same package as 
 ## Samples
 
 ## License
-   Copyright 2018 Yongshun Ye
-
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at
-
-       http://www.apache.org/licenses/LICENSE-2.0
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
+>   Copyright 2018 Yongshun Ye
+>
+>   Licensed under the Apache License, Version 2.0 (the "License");
+>   you may not use this file except in compliance with the License.
+>   You may obtain a copy of the License at
+>
+>       http://www.apache.org/licenses/LICENSE-2.0
+>
+>   Unless required by applicable law or agreed to in writing, software
+>   distributed under the License is distributed on an "AS IS" BASIS,
+>   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+>   See the License for the specific language governing permissions and
+>   limitations under the License.
