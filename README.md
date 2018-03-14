@@ -40,10 +40,10 @@ ImplementedService::new
 
 There are 2 `Service` interfaces to simplify your job. Implement `SingletonService` if your `Service` doesn't have any member variables and one instance can be used for all requests in all connections. It is actually a `ServiceFactory` that returns itself in `createService()`. If your `Service` doesn't hold any system resources that can leak and therefore `init()` and `release()` are empty, you can implement `NoResourcesService` to save some code.
 
-Some partially or fully implemented `Service`s are there in the same package as examples. You can alse extend them to build your own `Service`s.
+Some partially or fully implemented `Service`s are there in the same package as examples. You can also use or extend them to build your own `Service`s.
 ### Build the Server
 `AsyncHttpServer` is the actual class that interacts with the Netty framework and hold the `Services`. You need an `AsyncHttpServer.Builder` to build and start an `AsyncHttpServer` instance. With the builder, you can register `Service`s to listen for a URI, a URI path, a URI path directory, or a regular expression that matches the URI. If none of these match, a default one will be used.
-## Samples
+## Examples
 
 ## License
 ```
