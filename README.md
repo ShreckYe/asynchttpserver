@@ -35,7 +35,8 @@ In order to build a server that can serve many requests from many clients, a `Se
 or method inference
 ```java
 ImplementedService::new
-```.
+```
+.
 
 There are 2 `Service` interfaces to simplify your job. Implement `SingletonService` if your `Service` doesn't have any member variables and one instance can be used for all requests in all connections. It is actually a `ServiceFactory` that returns itself in `createService()`. If your `Service` doesn't hold any system resources that can leak and therefore `init()` and `release()` are empty, you can implement `NoResourcesService` to save some code.
 
