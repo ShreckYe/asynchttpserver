@@ -46,6 +46,9 @@ Some partially or fully implemented `Service`s are there in the same package as 
 `AsyncHttpServer` is the actual class that interacts with the Netty framework and hold the `Services`. You need an `AsyncHttpServer.Builder` to build and start an `AsyncHttpServer` instance. With the builder, you can register `Service`s to listen for a URI, a URI path, a URI path directory, or a regular expression that matches the URI. If none of these match, a default one will be used.
 ## Examples
 
+
+## Acknowledgements
+Thank Huiqi Xue for his help on computer network knowledge and reviews on this project.
 ## License
 ```
    Copyright 2018 Yongshun Ye
