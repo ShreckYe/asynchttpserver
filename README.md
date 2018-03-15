@@ -10,6 +10,13 @@ This library allows Java applications to easily receive HTTP requests, process t
 1. High performance with the power of [Netty](https://netty.io/) and Java NIO.
 2. Very lightweight with almost zero overhead.
 3. Suitable for building simple application services, user content services, and public API services.
+## Install
+Not available yet, but coming soon.
+
+Gradle identifier:
+```
+shreckye.asynchttpserver:asynchttpserver:1.0-alpha-20180315
+```
 ## Guide
 ### HTTP Objects
 There are different kinds of HTTP objects you will receive or send when building an HTTP server. These HTTP object classes and their corresponding functions are listed below:
