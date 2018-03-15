@@ -68,7 +68,7 @@ ImplementedService::new
 ```
 .
 
-There are 2 `Service` interfaces to simplify your job. Implement `SingletonService` if your `Service` doesn't have any member variables and one instance can be used for all requests in all connections. It is actually a `ServiceFactory` that returns itself in `createService()`. If your `Service` doesn't hold any system resources that can leak and therefore `init()` and `release()` are empty, you can implement `NoResourcesService` to save some code.
+There are 2 `Service` interfaces to simplify your job. Implement `SingletonService` if your `Service` doesn't have any member variables and one instance can be used for all requests in all connections. A `SingletonService` is actually a `ServiceFactory` that returns itself in `createService()`, so an instance can be registered directly. If your `Service` doesn't hold any system resources that can leak and therefore `init()` and `release()` are empty, you can implement `NoResourcesService` to save some code.
 
 Some partially or fully implemented `Service`s are there in the same package as examples. You can also use or extend them to build your own `Service`s.
 ### Build and Start the Server
