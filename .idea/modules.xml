@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/asynchttpserver.iml" filepath="$PROJECT_DIR$/.idea/modules/asynchttpserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/asynchttpserver_main.iml" filepath="$PROJECT_DIR$/.idea/modules/asynchttpserver_main.iml" group="asynchttpserver" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/asynchttpserver_test.iml" filepath="$PROJECT_DIR$/.idea/modules/asynchttpserver_test.iml" group="asynchttpserver" />
+    </modules>
+  </component>
+</project>
