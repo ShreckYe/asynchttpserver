@@ -22,13 +22,13 @@ There are different kinds of HTTP objects you will receive or send when building
 7. `LastContentBlock`: the last block of data in either an HTTP request or an HTTP response's content.
 ### Service
 A `Service` is an instance that that serves an HTTP request and sends back an HTTP response, much similar to a Javax `Servlet`. It has 2 methods `init()` and `release()` to initialize or release system resources. There are 4 kinds of `Service`s that you can register to the server:
-1. `LightweightService`: the simplest kind of `Service` that serves until a full HTTP request is received and sends back a full HTTP response.
+1. `LightweightService`: the simplest kind of `Service` that serves after a full HTTP request is received and sends back a full HTTP response.
 
 Methods to implement:
 ```java
 public abstract FullResponse onServeFullRequest(FullRequest fullRequest) throws Exception;
 ```
-2. `FullRequestService`: the kind of `Service` that serves until a full HTTP request is received.
+2. `FullRequestService`: the kind of `Service` that serves after a full HTTP request is received.
 
 Methods to implement:
 ```java
