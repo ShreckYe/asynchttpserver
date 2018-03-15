@@ -26,6 +26,7 @@ A `Service` is an instance that that serves an HTTP request and sends back an HT
 2. `FullRequestService`
 3. `FullResponseService`
 4. `DefaultService`
+
 To build your own `Service`, you must extend one of the 4 classes listed above and implement its `onServe` method(s). Because a `Service` only serves one request, the member variables you declare in a `Service` instance is only valid during serving that request.
 
 In order to build a server that can serve many requests from many clients, a `ServiceFactory` is needed to generate `Service`s for each incoming request. Just implement `createService()` to build a `ServiceFactory`. To simplify this, you can do it with lambda
