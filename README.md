@@ -99,7 +99,7 @@ public class ExampleServer {
         new AsyncHttpServer.Builder()
                 .registerUri("/hello_world.html?param=special", new HelloWorldWithSpecialParamService())
                 .registerUriPath("/hello_world.html", new HelloWorldService())
-                .registerUriDirectoryPath("/files/", () -> new DirectoryPathFileService("/files/", "C:\\home\\username\\files\\"))
+                .registerUriDirectoryPath("/files/", () -> new DirectoryPathFileService("/files/", "/home/username/files/"))
                 .registerPathRegex("\\/\\w*bingo\\w*", new BingoService())
                 .registerDefault(new NotFoundService())
                 .buildAndStart();
