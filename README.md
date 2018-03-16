@@ -142,7 +142,7 @@ public class ExampleServer {
 
 ## Acknowledgements
 Thank Huiqi Xue for his help on computer network knowledge and reviews on this project.
-## License
+## Apache License
 ```
    Copyright 2018 Yongshun Ye
 
