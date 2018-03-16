@@ -6,7 +6,7 @@ Don't know how to start with building a simple HTTP application server? Tired of
 
 This library allows Java applications to easily receive HTTP requests, process them, and send back HTTP responses asynchronously. It's built on top of [Netty](https://netty.io/) and supports Java 8 and above.
 ## Features
-1. Direct integration into your Java project.
+1. Direct integration into your Java project. No Java EE framework required.
 1. High performance with the power of [Netty](https://netty.io/) and Java NIO.
 2. Very lightweight with almost zero overhead.
 3. Suitable for building simple application services, user content services, and public API services.
