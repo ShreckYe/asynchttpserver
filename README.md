@@ -11,9 +11,9 @@ This library allows Java applications to easily receive HTTP requests, process t
 2. Very lightweight with almost zero overhead.
 3. Suitable for building simple application services, user content services, and public API services.
 ## Install
-Not available yet, but coming soon.
+[Download JAR](/build/libs/asynchttpserver-1.0-alpha-20180315.jar)
 
-Gradle identifier:
+Gradle identifier (available yet, but coming soon):
 ```
 shreckye.asynchttpserver:asynchttpserver:1.0-alpha-20180315
 ```
