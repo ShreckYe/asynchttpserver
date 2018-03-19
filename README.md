@@ -67,7 +67,7 @@ To build your own `Service`, you must extend one of the 4 classes listed above a
 
 In order to build a server that can serve many requests from many clients, a `ServiceFactory` is needed to generate `Service`s for each incoming request. Just implement `createService()` to build a `ServiceFactory`. To simplify this, you can do it with lambda
 ```java
-() -> new ImplementedService(params...)
+() -> new ImplementedService({params})
 ```
 or method inference
 ```java
