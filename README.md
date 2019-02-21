@@ -141,7 +141,7 @@ public class ExampleServer {
 ```
 
 ## Acknowledgements
-Thank Huiqi Xue for his help on computer network knowledge and reviews on this project.
+Thank [NeoFantom](https://github.com/NeoFantom) for his help on computer network theories and reviews on this project.
 ## Apache License
 ```
    Copyright 2018 Yongshun Ye
