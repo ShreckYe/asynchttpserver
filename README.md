@@ -65,7 +65,7 @@ In order to build a server that can serve many requests from many clients, a `Se
 ```java
 () -> new ImplementedService({params})
 ```
-or method inference
+or method reference
 ```java
 ImplementedService::new
 ```
